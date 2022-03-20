@@ -16,7 +16,7 @@
 
 ## Link
 
-[back-end](https://github.com/sja-thedude/hello-rails-back-end)
+[back-end](https://github.com/sja-thedude/hello-rails-back-end/tree/feature_api)
 
 ## Setup
 
