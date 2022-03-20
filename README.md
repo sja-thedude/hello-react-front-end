@@ -1,9 +1,12 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
+
+
+# hello-react-front-end
 
 ## Description
 
-> Now that you're familiar with Rails and React, it's time to put them together in a new kind of 'Hello World!' app. This exercise is going to have you create a React front-end with a Rails back-end and connect them to display a random message.
+> Since I familiar with Rails and React I put them together in a new kind of 'Hello World!' app. This exercise is going to have you create a React front-end with a Rails back-end and connect them to display a random message.
 
 
 ## Learning objectives
@@ -11,36 +14,17 @@
 - Implement a connection between a Ruby on Rails back-end and React front-end.
 - Understand pros and cons of different approaches of connecting Ruby on Rails back-end with React front-end.
 
+## Link
 
-## Getting Started
-
-To get a local copy for this project and running follow these simple example steps.
-
+[back-end](https://github.com/sja-thedude/hello-rails-back-end)
 
 ## Setup
 
 ### Creating the hello-rails-react
 
 ```bash
-$   rails new hello-rails-back-end --api --database=postgresql
-$   cd hello-rails-back-end # Move into the application directory
-```
-
-```bash
 $   npx create-react-app@latest hello-react-front-end
 $   cd  hello-react-front-end # Move into the application directory
-```
-
-
-- Now run these commands to install everything.
-
-```bash
-$   bundle install
-$   rails webpacker:install
-$   rails new rails-react-tutorial --webpack=react -d=postgresql
-$   rails webpacker:install:react
-$   rails generate react:install
-$   yarn install
 ```
 
 ### Clone this repository
@@ -48,13 +32,6 @@ $   yarn install
 ```bash
 $ https://github.com/sja-thedude/hello-react-front-end.git
 $ cd hello-react-front-end
-```
-
-### Create the database
-
-```bash
-$   rails db:create   # or
-$   rake db:create
 ```
 
 ## Available Scripts
@@ -69,11 +46,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -84,13 +56,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
@@ -100,17 +65,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Install linter and 
 
-- Rubocop gem
+ESLint
 
 ```bash
-$  bundle init
-$  bundle install
+$  npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
 ```
+
 - Stylelint package
 
 ```bash
-$  npm init -y
-$  npm install
 $  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 
 ```
@@ -118,15 +81,14 @@ $  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-sta
 - Run linter
 
 ```bash
-$  rubocop .
+$  npx eslint .
 $  npx stylelint "**/*.{css,scss}" 
 ```
 
 - In auto-correct mode, RuboCop will try to automatically fix offenses:
 
 ```bash
-$  rubocop -A # or
-$  rubocop --auto-correct-all
+$  npx eslint . --fix
 $  npx stylelint "**/*.{css,scss}" --fix 
 ```
 
@@ -135,9 +97,8 @@ $  npx stylelint "**/*.{css,scss}" --fix
 
 This project is build with:
 
--  ![Ruby](https://img.shields.io/badge/-Ruby-000000?style=flat&logo=ruby&logoColor=red)
--  ![Ruby on Rails](https://img.shields.io/badge/-Ruby_on_Rails-000000?style=flat&logo=ruby-on-rails&logoColor=blue)
 - ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
+- ![Redux](https://img.shields.io/badge/-Redux-000000?style=flat&logo=redux&logoColor=ffffff&labelColor=violet)
 
 ## Authors
 
